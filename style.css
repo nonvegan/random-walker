@@ -1,96 +1,88 @@
-    :root {
-        --fuchsia: #f92672;
-        --light-violet: #ae81ff;
-        --bunker: #21252b;
-        --ebony: #282c34;
-        --atomic-tangerine: #FC9867;
-        --dandelion: #FFD866;
-        --feijoa: #A9DC76;
-        --turquoise-blue: #78dce8;
-    }
+:root {
+    --fuchsia: #f92672;
+    --light-violet: #ae81ff;
+    --bunker: #21252b;
+    --ebony: #282c34;
+    --atomic-tangerine: #FC9867;
+    --dandelion: #FFD866;
+    --feijoa: #A9DC76;
+    --turquoise-blue: #78dce8;
+}
 
-    html,
-    body {
-        margin: 0;
-        padding: 0;
-        background-color: #21252b;
-        color: white;
-        font-family: sans-serif;
-    }
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #21252b;
+    color: white;
+    font-family: sans-serif;
+}
 
-    h1 {
-        text-align: center;
-        font-size: 3rem;
-        margin-bottom: 1.5rem;
-    }
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
 
-    h1 span {
-        color: #ae81ff
-    }
+h1 span {
+    color: #ae81ff
+}
 
-    canvas {
-        background-color: #282c34;
-        border: 0.3rem solid #ae81ff;
-        border-radius: 0.5rem;
-    }
+canvas {
+    background-color: #282c34;
+    border: 0.3rem solid #ae81ff;
+    border-radius: 0.5rem;
+}
 
-    div {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        margin-top: 1rem
-    }
+div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem
+}
 
-    label {
-        font-size: 2rem;
-        margin-top: 1.5vh;
-        margin-left: 1.5rem;
-    }
-    label.switch {
-        margin-left: 0.5vw;
-     }
+label {
+    font-size: 2rem;
+    margin-top: 1.5vh;
+    margin-left: 0.5rem;
+}
 
-    input,
-    button,
-    select {
-        width: 12rem;
-        height: 3rem;
-        background-color: inherit;
-        color: inherit;
-        margin-right: 0vw;
-        margin-left: 1.5vw;
-        margin-top: 1.5vh;
-        border: 0.3rem solid white;
-        border-radius: .75rem;
-        font-size: 1.25rem;
-    }
+input,
+button,
+select {
+    width: 12rem;
+    height: 3rem;
+    background-color: inherit;
+    color: inherit;
+    margin-right: 0.5vw;
+    margin-left: 0.5vw;
+    margin-top: 1.5vh;
+    border: 0.3rem solid white;
+    border-radius: .75rem;
+    font-size: 1.25rem;
+}
 
-   
+option,
+option div {
+    background-color: #ae81ff;
+    border: 0.3rem solid white;
+}
 
-    option,
-    option div {
-        background-color: #ae81ff;
-        border: 0.3rem solid white;
-    }
+input {
+    appearance: none;
+    height: 2.6rem;
 
-    input {
-        appearance: none;
-        height: 2.3rem;
+}
 
-    }
+button:hover,
+input:hover,
+select:hover,
+.slider:hover {
+    border-color: #ae81ff;
+    cursor: pointer;
+}
 
-    button:hover,
-    input:hover,
-    select:hover,
-    .slider:hover {
-        border-color: #ae81ff;
-        cursor: pointer;
-    }
-
-    button:hover span {
-        color: #ae81ff;
-    }
-
-
-    
+button:hover span {
+    color: #ae81ff;
+}
