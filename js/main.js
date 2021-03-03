@@ -13,12 +13,12 @@ function setup() {
   canvas.width = width;
   canvas.height = height;
   ctx.fillStyle = getComputedStyle(document.documentElement).getPropertyValue("--fuchsia");
-  ctx.globalAlpha = 0.15;
+  ctx.globalAlpha = 0.1;
   resetButton.addEventListener("click", reset);
 }
 
 function draw() {
-  for (let i = 0; i < Math.pow(speedRange.value, 2); i++) {
+  for (let i = 0; i < Math.pow(speedRange.value, 1.4); i++) {
     walker.draw(ctx);
     update();
   }
