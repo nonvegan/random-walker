@@ -39,4 +39,4 @@ function reset() {
 }
 
 setup();
-animate()
+animate();
