@@ -17,12 +17,16 @@ function setup() {
   resetButton.addEventListener("click", reset);
 }
 
+function animate() {
+  draw();
+  update();
+  requestAnimationFrame(animate);
+}
+
 function draw() {
   for (let i = 0; i < Math.pow(speedRange.value, 1.4); i++) {
     walker.draw(ctx);
-    update();
   }
-  requestAnimationFrame(draw);
 }
 
 function update() {
@@ -35,4 +39,4 @@ function reset() {
 }
 
 setup();
-draw();
+animate()
