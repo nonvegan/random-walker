@@ -18,7 +18,7 @@ function setup() {
 }
 
 function draw() {
-  for (let i = 0; i < speedRange.value; i++) {
+  for (let i = 0; i < Math.pow(speedRange.value, 2); i++) {
     walker.draw(ctx);
     update();
   }
