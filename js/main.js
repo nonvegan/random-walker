@@ -18,7 +18,7 @@ function setup() {
 }
 
 function animate() {
-  for (let i = 0; i < Math.pow(speedRange.value, 1.5); i++) {
+  for (let i = 0; i < Math.pow(speedRange.value, 1.25); i++) {
     draw();
     update();
   }
