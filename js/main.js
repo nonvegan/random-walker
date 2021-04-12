@@ -13,7 +13,7 @@ function setup() {
   canvas.width = width;
   canvas.height = height;
   ctx.fillStyle = getComputedStyle(document.documentElement).getPropertyValue("--fuchsia");
-  ctx.globalAlpha = 0.2;
+  ctx.globalAlpha = 0.1;
   resetButton.addEventListener("click", reset);
 }
 
