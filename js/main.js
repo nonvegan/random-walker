@@ -13,20 +13,20 @@ function setup() {
   canvas.width = width;
   canvas.height = height;
   ctx.fillStyle = getComputedStyle(document.documentElement).getPropertyValue("--fuchsia");
-  ctx.globalAlpha = 0.1;
+  ctx.globalAlpha = 0.2;
   resetButton.addEventListener("click", reset);
 }
 
 function animate() {
-  draw();
-  update();
+  for (let i = 0; i < Math.pow(speedRange.value, 2); i++) {
+    draw();
+    update();
+  }
   requestAnimationFrame(animate);
 }
 
 function draw() {
-  for (let i = 0; i < Math.pow(speedRange.value, 2); i++) {
-    walker.draw(ctx);
-  }
+  walker.draw(ctx);
 }
 
 function update() {
